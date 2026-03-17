@@ -1,0 +1,357 @@
+/* ===== Page ===== */
+.pu-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.pu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 16px 28px;
+}
+
+/* ===== Header ===== */
+.pu-head {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.pu-title {
+  font-size: 20px;
+  font-weight: 950;
+  color: #0f172a;
+}
+
+.pu-subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 650;
+  max-width: 760px;
+}
+
+.pu-head-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ===== Alerts ===== */
+.pu-alert {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  font-weight: 850;
+  font-size: 13px;
+}
+
+.pu-alert.success {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.pu-alert.danger {
+  border-color: #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+}
+
+/* ===== Layout ===== */
+.pu-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1.55fr;
+  gap: 12px;
+}
+
+/* ===== Card ===== */
+.pu-card {
+  background: #ffffff;
+  border: 1px solid #e5edff;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(2, 8, 23, 0.04);
+  padding: 12px;
+}
+
+.pu-card-title {
+  font-size: 15px;
+  font-weight: 950;
+  color: #0f172a;
+  width: 250px;
+  height: auto;
+}
+
+/* ===== Text ===== */
+.pu-muted {
+  color: #64748b;
+  font-weight: 650;
+  font-size: 13px;
+}
+
+.pu-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+  color: #334155;
+  font-size: 13px;
+}
+
+/* ===== Form (tighter) ===== */
+.pu-form {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+
+}
+
+.pu-field {
+  display: grid;
+  gap: 5px;
+}
+
+.pu-label {
+  font-size: 12px;
+  font-weight: 900;
+  color: #334155;
+}
+
+/* ===== Inputs ===== */
+.pu-input {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  outline: none;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.pu-input:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.32);
+}
+
+.pu-compact {
+  max-width: 220px;
+}
+
+/* ===== Buttons (smaller) ===== */
+.pu-btn {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #2563EB;
+  color: white;
+  font-weight: 900;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+.pu-btn:hover {
+  background: black;
+  color: white;
+  box-shadow: 0 8px 14px rgba(2, 8, 23, 0.05);
+  transform: translateY(-1px);
+}
+
+.pu-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.clear{
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #2563EB;
+  color: white;
+  font-weight: 900;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+.clear:hover{
+background: black;
+  color: white;
+  box-shadow: 0 8px 14px rgba(2, 8, 23, 0.05);
+  transform: translateY(-1px);
+  }
+
+
+
+.pu-primary {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.pu-primary:hover {
+  background: #1d4ed8;
+}
+
+.pu-ghost {
+  background: #ffffff;
+}
+
+.pu-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pu-tiny {
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* ===== Pills (smaller) ===== */
+.pu-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 950;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.pu-pill.enabled {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.pu-pill.disabled {
+  border-color: #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+}
+
+.pu-pill.pu-role {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+
+/* ===== Table (tight rows) ===== */
+.pu-table-wrap {
+  margin-top: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow-x: auto;
+  background: #fff;
+}
+
+.pu-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 940px;
+}
+
+.pu-table thead th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 12px;
+  font-weight: 950;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.pu-table tbody td {
+  padding: 9px 10px;          /* ✅ tighter */
+  font-size: 13px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.pu-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+.pu-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Actions: keep in one line */
+.pu-actions {
+  display: inline-flex;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: nowrap;          /* ✅ no wrapping */
+}
+
+/* Expand row for password reset (compact) */
+.pu-expand {
+  background: #f8fafc;
+  padding: 0 !important;
+}
+
+.pu-expand-inner {
+  padding: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.pu-expand-title {
+  font-weight: 950;
+  color: #0f172a;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.pu-expand-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1000px) {
+  .pu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pu-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* On small screens allow action wrap */
+@media (max-width: 800px) {
+  .pu-actions {
+    flex-wrap: wrap;
+  }
+
+  .pu-expand-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .pu-container {
+    padding: 14px;
+  }
+}

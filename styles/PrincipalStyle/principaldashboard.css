@@ -1,0 +1,159 @@
+
+.alert-error {
+  margin: 14px 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+  font-size: 14px;
+}
+
+.grid-stats {
+  margin-top: 18px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-charts {
+  margin-top: 14px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+@media (max-width: 1100px) {
+  .grid-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.card-subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.stat-card {
+  padding: 18px;
+}
+
+.stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.stat-title {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1e3a8a;
+}
+
+.stat-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.chart-card {
+  padding: 18px;
+}
+
+.chart-wrap {
+  margin-top: 12px;
+  height: 260px;
+}
+
+.skeleton {
+  height: 260px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #f1f5f9, #e2e8f0, #f1f5f9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.section-card {
+  margin-top: 14px;
+  padding: 18px;
+}
+
+.actions-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 1100px) {
+  .actions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.action-item {
+  border: 1px solid #e5edff;
+  background: #f8fbff;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.action-title {
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.action-desc {
+  font-size: 13px;
+  color: #475569;
+}
+
+.chart-wrap {
+  margin-top: 12px;
+  height: 300px; /* make stable height */
+}
+
+.chart-wrap--pie {
+  height: 320px; /* pie needs a bit more room for legend */
+}
+
+.chart-empty {
+  height: 300px;
+  border-radius: 14px;
+  border: 1px dashed #cbd5e1;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-weight: 700;
+}
+.stat-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.15);
+}

@@ -1,0 +1,268 @@
+/* ===== PAGE ===== */
+.pe-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.pe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 18px 34px;
+}
+
+/* ===== HEADER ===== */
+.pe-head {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.pe-title {
+  font-size: 22px;
+  font-weight: 950;
+  color: #0f172a;
+}
+
+.pe-subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 650;
+}
+
+/* ===== ERROR ===== */
+.pe-error {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+  font-weight: 900;
+}
+
+/* ===== GRID ===== */
+.pe-grid-2 {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 14px;
+}
+
+/* ===== CARD ===== */
+.pe-card {
+  background: #ffffff;
+  border: 1px solid #e5edff;
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(2, 8, 23, 0.05);
+  padding: 16px;
+}
+
+.pe-card-title {
+  font-size: 16px;
+  font-weight: 950;
+  color: #0f172a;
+}
+
+/* ===== TEXT ===== */
+.pe-muted {
+  color: #64748b;
+  font-weight: 650;
+}
+
+.pe-strong {
+  font-weight: 950;
+  color: #0f172a;
+}
+
+.pe-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+  color: #334155;
+}
+
+/* ===== FORM ===== */
+.pe-form {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.pe-label {
+  font-size: 13px;
+  font-weight: 900;
+  color: #334155;
+  margin-top: 6px;
+}
+
+.pe-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  outline: none;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.pe-input:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.35);
+}
+
+/* ===== BUTTONS ===== */
+.pe-btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+.pe-btn:hover {
+  background: #f8fafc;
+  box-shadow: 0 10px 18px rgba(2, 8, 23, 0.06);
+  transform: translateY(-1px);
+}
+
+.pe-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.pe-btn-primary {
+  border: none;
+  background: #2563eb;
+  color: white;
+}
+
+.pe-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.pe-btn-danger {
+  border: none;
+  background: #ef4444;
+  color: white;
+}
+
+.pe-btn-danger:hover {
+  background: #dc2626;
+}
+
+.pe-btn-tiny {
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* ===== TOOLBAR ===== */
+.pe-toolbar {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 14px;
+}
+
+/* ===== TABLE ===== */
+.pe-table-wrap {
+  margin-top: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.pe-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px; /* enables horizontal scroll on small screens */
+  background: #ffffff;
+}
+
+.pe-table thead th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 13px;
+  font-weight: 950;
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.pe-table tbody td {
+  padding: 12px;
+  font-size: 13px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.pe-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+.pe-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pe-namecell {
+  display: grid;
+  gap: 3px;
+}
+
+.pe-hint {
+  padding: 10px 12px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-weight: 650;
+  font-size: 12px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .pe-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .pe-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 750px) {
+  .pe-container {
+    padding: 14px;
+  }
+
+  .pe-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .pe-table-wrap {
+    overflow-x: auto;
+  }
+
+  .pe-table {
+    min-width: 860px;
+  }
+}
