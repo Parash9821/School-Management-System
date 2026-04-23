@@ -1,0 +1,274 @@
+/* ===== Page ===== */
+.pa-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.pa-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 18px 34px;
+}
+
+/* ===== Header ===== */
+.pa-head {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.pa-title {
+  font-size: 22px;
+  font-weight: 950;
+  color: #0f172a;
+}
+
+.pa-subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 650;
+  max-width: 760px;
+}
+
+/* ===== Alert ===== */
+.pa-alert {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+  font-weight: 900;
+}
+
+/* ===== Layout ===== */
+.pa-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 14px;
+}
+
+/* ===== Card ===== */
+.pa-card {
+  background: #fff;
+  border: 1px solid #e5edff;
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(2, 8, 23, 0.05);
+  padding: 16px;
+}
+
+.pa-card-title {
+  font-size: 16px;
+  font-weight: 950;
+  color: #0f172a;
+}
+
+/* ===== Text helpers ===== */
+.pa-muted {
+  color: #64748b;
+  font-weight: 650;
+}
+
+.pa-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+}
+
+/* ===== Form ===== */
+.pa-form {
+  margin-top: 12px;
+}
+
+.pa-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.pa-field {
+  display: grid;
+  gap: 6px;
+}
+
+.pa-label {
+  font-size: 13px;
+  font-weight: 900;
+  color: #334155;
+}
+
+.pa-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  outline: none;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.pa-input:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.35);
+}
+
+/* ===== Buttons ===== */
+.pa-btn {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #0f172a;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+.pa-btn:hover {
+  background: #f8fafc;
+  box-shadow: 0 10px 18px rgba(2, 8, 23, 0.06);
+  transform: translateY(-1px);
+}
+
+.pa-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.pa-primary {
+  border: none;
+  background: #2563eb;
+  color: #fff;
+}
+
+.pa-primary:hover {
+  background: #1d4ed8;
+}
+
+.pa-danger {
+  border: none;
+  background: #ef4444;
+  color: #fff;
+}
+
+.pa-danger:hover {
+  background: #dc2626;
+}
+
+.pa-tiny {
+  margin-top: 0;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* ===== Toolbar ===== */
+.pa-toolbar {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 14px;
+}
+
+.pa-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.pa-filter {
+  max-width: 360px;
+}
+
+/* ===== Table ===== */
+.pa-table-wrap {
+  margin-top: 12px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  overflow-x: auto;
+  background: #fff;
+}
+
+.pa-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px; /* prevents overlap */
+}
+
+.pa-table thead th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 13px;
+  font-weight: 950;
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.pa-table tbody td {
+  padding: 12px;
+  font-size: 13px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.pa-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+.pa-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pa-trunc {
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1000px) {
+  .pa-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pa-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 750px) {
+  .pa-container {
+    padding: 14px;
+  }
+
+  .pa-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pa-filter {
+    max-width: 100%;
+  }
+}

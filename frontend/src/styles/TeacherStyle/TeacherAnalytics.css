@@ -1,0 +1,248 @@
+/* =========================
+   Teacher Analytics (Clean)
+   ========================= */
+
+.page {
+  background: #f5f7fb;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #111827;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 22px 18px 40px;
+}
+
+/* Header */
+.page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 16px 0 16px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.page-subtitle {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+/* Alerts */
+.error,
+.success {
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 13px;
+  margin: 10px 0 14px;
+  border: 1px solid transparent;
+}
+
+.error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+.success {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #065f46;
+}
+
+/* Buttons */
+.btn {
+  border: 1px solid #cfe1ff;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.08s ease;
+  width: fit-content;
+}
+
+.btn:hover {
+  background: #dbeafe;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5eaf3;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  padding: 18px;
+  margin-bottom: 16px;
+
+  /* keeps long content inside */
+  min-width: 0;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+/* Grid for Summary cards */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+  min-width: 0;
+}
+
+.grid-2 > * {
+  min-width: 0;
+}
+
+@media (max-width: 920px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form */
+.form {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #d7deea;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.22);
+}
+
+/* Small row */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Text helpers */
+.muted {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Table (div-based) */
+.table {
+  border: 1px solid #e5eaf3;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  min-width: 0;
+}
+
+.table-head {
+  display: grid;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #f1f5f9;
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+}
+
+/* Default for Top Rank (Rank, Student, Obtained, Max, %) */
+.card:nth-of-type(4) .table-head,
+.card:nth-of-type(4) .table-row {
+  grid-template-columns: 80px 1.3fr 120px 100px 90px;
+}
+
+.table-row {
+  display: grid;
+  gap: 10px;
+  padding: 12px 12px;
+  border-top: 1px solid #eef2f7;
+  align-items: center;
+}
+
+.table-row:hover {
+  background: #f8fafc;
+}
+
+/* Subject analytics table (Subject, Students, Avg, High, Low, Visual) */
+.card:nth-of-type(5) .table-head,
+.card:nth-of-type(5) .table-row {
+  grid-template-columns: 1.4fr 110px 90px 90px 90px 170px;
+}
+
+/* Responsive tables (scroll instead of breaking layout) */
+@media (max-width: 780px) {
+  .table {
+    overflow-x: auto;
+  }
+
+  /* Make each analytics table scrollable when narrow */
+  .card:nth-of-type(4) .table-head,
+  .card:nth-of-type(4) .table-row {
+    min-width: 650px;
+  }
+
+  .card:nth-of-type(5) .table-head,
+  .card:nth-of-type(5) .table-row {
+    min-width: 760px;
+  }
+}
